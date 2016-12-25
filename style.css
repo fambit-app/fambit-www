@@ -5,9 +5,47 @@
 
 html, body {
     height: 100%;
+    background-color: #f9f4f5;
 }
 
 .brand-highlight {
     background-color: #90708C;
-    height: 10%;
+    height: 126px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 52px;
+}
+
+header img, header a {
+    display: inline-block;
+}
+
+header img {
+    position: absolute;
+    margin-left: 100px;
+
+    padding: 1px;
+    background-color: #f9f4f5;
+
+    /* for border */
+    border: 1px solid #555B6E;
+}
+
+header a {
+    width: 96px;
+    height: 96px;
+    background-color: #f00;
+
+    float: right;
+    margin-right: 5%;
+
+    position: relative;
+    top: 24px;
+}
+
+header a:nth-child(2) {
+    margin-right: 15%;
 }
