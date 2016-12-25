@@ -2,6 +2,10 @@
     font-family: 'Metropolis';
     src: url(font-metropolis.otf);
 }
+@font-face {
+    font-family: 'Lato';
+    src: url(font-lato.woff2);
+}
 
 * {
     margin: 0;
@@ -10,10 +14,25 @@
 
 html, body {
     height: 100%;
-    background-color: #f9f4f5;
 }
 
-.brand-highlight {
+body > div {
+    font-family: Lato, serif;
+    font-size: 1.3em;
+    padding: 2em;
+}
+
+body > div:nth-child(odd) {
+    background-color: #555B6E;
+    color: #f9f4f5;
+}
+
+body > div:nth-child(even) {
+    background-color: #f9f4f5;
+    color: #555B6E;
+}
+
+header {
     background-color: #90708C;
     height: 138px;
 }
@@ -27,8 +46,8 @@ html, body {
     top: 39px;
 }
 
-header {
-    position: fixed;
+.offset-header {
+    position: absolute;
     width: 100%;
     top: 28px;
 }
@@ -60,4 +79,8 @@ header a {
 
 header a:nth-child(2) {
     margin-right: 15%;
+}
+
+.overview {
+    padding-top: 55px;
 }
