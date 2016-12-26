@@ -103,21 +103,19 @@ ul {
     margin-left: 5%;
     font-size: 0.9em;
     position: relative;
+    padding-top: 10px;
+    border-top: 3px solid #90708C;
 }
 
 .overview ul div {
     padding: 3px;
-    border: 1px solid #90708C;
 }
 
 .overview ul .index {
     position: absolute;
+    top: 13px;
     left: -0.9em;
-    color: #f9f4f5;
-    background-color: #90708C;
-    padding: 3px;
-    border: 1px solid #90708C;
-    border-right: none;
+    color: #90708C;
 }
 
 .overview img {
