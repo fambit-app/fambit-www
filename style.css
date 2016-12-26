@@ -81,6 +81,49 @@ header a:nth-child(2) {
     margin-right: 15%;
 }
 
+h3 {
+    padding: 1em;
+}
+
+ul {
+   list-style: none;
+}
+
 .overview {
     padding-top: 55px;
+}
+
+.overview ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.overview li {
+    flex: 0 0 30%;
+    margin-left: 5%;
+    font-size: 0.9em;
+    position: relative;
+}
+
+.overview ul div {
+    padding: 3px;
+    border: 1px solid #90708C;
+}
+
+.overview ul .index {
+    position: absolute;
+    left: -0.9em;
+    color: #f9f4f5;
+    background-color: #90708C;
+    padding: 3px;
+    border: 1px solid #90708C;
+    border-right: none;
+}
+
+.overview img {
+    margin-top: 15px;
+}
+
+.overview li:first-child {
+    margin-left: 0;
 }
