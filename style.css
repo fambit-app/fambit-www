@@ -125,3 +125,29 @@ ul {
 .overview li:first-child {
     margin-left: 0;
 }
+
+.footer {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer a:focus {
+    color: inherit;
+}
+
+.footer a:visited {
+    color: inherit;
+}
+
+.fuzzle {
+    float: right;
+}
