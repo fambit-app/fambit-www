@@ -105,6 +105,11 @@ ul {
     position: relative;
     padding-top: 10px;
     border-top: 3px solid #90708C;
+    transition: border-color 0.3s ease;
+}
+
+.overview li:hover {
+    border-color: #555B6E;
 }
 
 .overview ul div {
@@ -128,6 +133,34 @@ ul {
 
 .recipient-example {
     display: block;
+}
+
+.benefit-section {
+    margin-bottom: 40px;
+}
+
+.benefit-section:hover img {
+    border-color: #555B6E !important;
+}
+
+.benefit-section img {
+    width: 300px;
+}
+
+.benefit-section:nth-child(odd) img {
+    float: right;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #90708C;
+    transition: border-color 0.3s ease;
+}
+
+.benefit-section:nth-child(even) img {
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 3px solid #90708C;
+    transition: border-color 0.3s ease;
 }
 
 .footer {
@@ -154,4 +187,8 @@ ul {
 
 .fuzzle {
     float: right;
+}
+
+.clear {
+    clear: both;
 }
