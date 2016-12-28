@@ -49,14 +49,14 @@ header {
 .offset-header {
     position: absolute;
     width: 100%;
-    top: 28px;
+    top: 21px;
 }
 
 header img, header a, header span {
     display: inline-block;
 }
 
-header img {
+.brand-icon{
     float: left;
     margin: 0 25px;
 
@@ -66,15 +66,12 @@ header img {
 }
 
 header a {
-    width: 96px;
-    height: 96px;
-    background-color: #f00;
-
     float: right;
     margin-right: 5%;
+}
 
-    position: relative;
-    top: 24px;
+header a img {
+    width: 96px;
 }
 
 header a:nth-child(2) {
