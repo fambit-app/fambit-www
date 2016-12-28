@@ -126,6 +126,10 @@ ul {
     margin-left: 0;
 }
 
+.recipient-example {
+    display: block;
+}
+
 .footer {
     padding: 5px;
     font-size: 1em;
