@@ -10,9 +10,9 @@
     <div class="offset-header">
         <img class="brand-icon" src="fambit-icon.png">
         <span class="brand-name">Fambit</span>
-        <a href="https://fuzzlesoft.ca" class="firefox"><img src="chrome.svg"></a>
-        <a href="https://fuzzlesoft.ca" class="chrome"><img src="chrome.svg"></a>
-        <a href="https://fuzzlesoft.ca" class="opera"><img src="chrome.svg"></a>
+        <a title="Pending store approval"><img src="opera-96.png"></a>
+        <a title="Pending store approval"><img src="chrome-96.png"></a>
+        <a title="Pending store approval"><img src="firefox-96.png"></a>
     </div>
 </header>
 <div class="overview">
@@ -22,30 +22,36 @@
     <ul>
         <li>
             <span class="index">1</span>
-            <div>Send bitcoin to Fambit wallet</div>
-            <img src="chrome.svg" alt="$ -> fambit">
+            <div>Send Bitcoin to Fambit wallet</div>
+            <img src="how-it-works-1.png"
+                 alt="Send Bitcoin from your wallet (e.g. on Coinbase/Circle/etc) to the generated address"
+                 title="Send Bitcoin from your wallet (e.g. on Coinbase/Circle/etc) to the generated address">
         </li>
         <li>
             <span class="index">2</span>
             <div>Visit websites like normal</div>
-            <img src="chrome.svg" alt="user node looking at url or smth">
+            <img src="how-it-works-2.png"
+                 alt="Just use the web like normal. Click links, open URLs: 'you do you', buddy"
+                 title="Just use the web like normal. Click links, open URLs: 'you do you', buddy">
         </li>
         <li>
             <span class="index">3</span>
             <div>Fambit automatically donates</div>
-            <img src="chrome.svg" alt="url, fambit attaching $">
+            <img src="how-it-works-3.png"
+                 alt="Upon loading the page, 0.01% of the Bitcoin currently in your wallet is sent to the site owner"
+                 title="Upon loading the page, 0.01% of the Bitcoin currently in your wallet is sent to the site owner">
         </li>
     </ul>
 </div>
 <div>
-    <h3>As a publisher</h3>
-    For all the html pages you serve, add the <code>bitcoin-recipient</code> meta tag, where <code>value</code>
-    is your bitcoin address:
+    <h3>As a website owner</h3>
+    For all the html pages you serve, add the <code>Bitcoin-recipient</code> meta tag, where <code>value</code>
+    is your Bitcoin address:
     <pre><code>
 &lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;meta name="bitcoin-recipient" value="A245345BC523523FE385"&gt;
+    &lt;meta name="Bitcoin-recipient" value="A245345BC523523FE385"&gt;
 &lt;/head&gt;
 &lt;body&gt;
     ...
@@ -55,38 +61,71 @@
 </div>
 <div class="benefits">
     <div class="benefit-section">
-        <img src="chrome.svg" alt="Reddit, Lukeatsea, Rust post">
         <h3>Promotes decentralization</h3>
         <ul>
-            <li>Donates to every site: so, even small popular-for-one-page sites will be funded</li>
-            <li>Author automatically receives bitcoin, no centralized collection (Brave[0])</li>
-            <li>Fambit doesn't take a "cut" of donations, unlike other solutions (Brave[1], SatoshiPay[2])</li>
+            <li>Donates to every site: so, even small, single-purpose sites will be funded.</li>
+            <li>Author automatically receives Bitcoin, no centralized collection
+                (<a href="#ref-0">Brave[0]</a>).
+            </li>
+            <li>Fambit doesn't take a "cut" of donations, unlike other solutions
+                (<a href="#ref-1">Brave[1]</a>, <a href="#ref-2">SatoshiPay[2]</a>).
+            </li>
         </ul>
         <div class="clear"></div>
     </div>
     <div class="benefit-section">
-        <img src="chrome.svg" alt="somehow represent 'no user tracking' as an image">
         <h3>More friendly than ads, more flexible than crowdfunding</h3>
         <ul>
-            <li>Unlike advertisements, absolutely no user tracking[3]</li>
+            <li>Unlike advertisements, absolutely <a href="#ref-3">no user tracking[3]</a></li>
             <li>To crowdfund, a content creator usually must either be popular, or "go viral". Fambit allows making
                 <em>some</em> revenue, even if fans don't immediately find the content
             </li>
         </ul>
         <div class="clear"></div>
     </div>
-    <a href="https://fuzzlesoft.ca" class="firefox">Firefox</a>
-    <a href="https://fuzzlesoft.ca" class="chrome">Chrome</a>
-    <a href="https://fuzzlesoft.ca" class="opera">Opera</a>
+</div>
+<div class="faq">
+    <h3>FAQ</h3>
+    <ul>
+        <li>Q: How much is donated each time I visit a site?</li>
+        <li>A: 0.01% of the money currently inside the Fambit "pool" of Bitcoin</li>
+
+        <li>
+            Q: How often do I need to re-fill Fambit with Bitcoin?
+            That would be a hassle, and I just wanna surf the web like it's 1999, baby
+        </li>
+        <li>
+            A: Since Fambit sends a percentage of the current funds, that means that, over time, it sends less Bitcoin.
+            Though this means that donations decrease in amount, it means that you - as a user - refill the donation pool
+            on your own terms, <em>not</em> when it runs out of funds.
+        </li>
+
+        <li>Q: What if a site doesn't support Fambit?</li>
+        <li>A: No donation is made. It would be neat-o if that site accepts donations in the future.</li>
+
+        <li>Q: Does Fambit take a cut of donation money?</li>
+        <li>
+            A: Nuh-uh. We Fambit guys don't profit from this.
+            In fact, Fambit is <a href="https://github.com/fambit-app/fambit">Open Source</a>!
+        </li>
+
+        <li>Q: Who owns the money I put into Fambit?</li>
+        <li>A: You do, the Bitcoin wallet information is on your computer and not known by anyone except you.</li>
+    </ul>
+</div>
+<div class="bottom-browsers no-really-check-it-out-look-the-icons-are-back-again-click-em-pls">
+    <a title="Pending store approval"><img src="firefox-96.png"></a>
+    <a title="Pending store approval"><img src="chrome-96.png"></a>
+    <a title="Pending store approval"><img src="opera-96.png"></a>
 </div>
 <div class="footer">
     <span class="fuzzle">Fuzzle is one <a href="https://en.wikipedia.org/wiki/Faverolles_(chicken)">magnificent beast of a chicken</a></span>
     <ul>
-        <li><a href="https://blog.brave.com/introducing-brave-payments/">[0] Publishers must authenticate with Brave to
+        <li><a name="ref-0" href="https://blog.brave.com/introducing-brave-payments/">[0] Publishers must authenticate with Brave to
             receive donations"</a></li>
-        <li><a href="https://www.brave.com/Payments_FAQ.html">[1] Brave takes a 5% cut</a></li>
-        <li><a href="https://satoshipay.io/faq/">[2] SatoshiPay charges 10% on transactions</a></li>
-        <li><a href="https://github.com/fambit-app/fambit/blob/master/app/bitcoin/controller.js#L198">[3] Fambit
+        <li><a name="ref-1" href="https://www.brave.com/Payments_FAQ.html">[1] Brave takes a 5% cut</a></li>
+        <li><a name="ref-2" href="https://satoshipay.io/faq/">[2] SatoshiPay charges 10% on transactions</a></li>
+        <li><a name="ref-3" href="https://github.com/fambit-app/fambit/blob/master/app/Bitcoin/controller.js#L198">[3] Fambit
             anonymously reports errors to <em>sentry.fuzzlesoft.ca</em></a></li>
     </ul>
 </div>

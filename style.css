@@ -19,7 +19,7 @@ html, body {
 body > div {
     font-family: Lato, serif;
     font-size: 1.3em;
-    padding: 2em;
+    padding: 40px;
 }
 
 body > div:nth-child(odd) {
@@ -35,6 +35,10 @@ body > div:nth-child(even) {
 header {
     background-color: #90708C;
     height: 138px;
+}
+
+a, a:hover, a:active, a:visited {
+    color: inherit;
 }
 
 .brand-name {
@@ -68,10 +72,13 @@ header img, header a, header span {
 header a {
     float: right;
     margin-right: 5%;
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 header a img {
     width: 96px;
+    filter: drop-shadow(0 0 1px white);
 }
 
 header a:nth-child(2) {
@@ -79,11 +86,7 @@ header a:nth-child(2) {
 }
 
 h3 {
-    padding: 1em;
-}
-
-ul {
-   list-style: none;
+    margin: 1em;
 }
 
 .overview {
@@ -91,19 +94,53 @@ ul {
 }
 
 .overview ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
+}
+
+@media (min-width: 1366px) {
+    .overview ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .overview li {
+        flex-basis: 408px;
+        padding-top: 10px;
+        border-top: 3px solid #90708C;
+        transition: border-color 0.3s ease;
+    }
+
+    .overview ul .index {
+        top: 13px;
+    }
+}
+
+@media (max-width: 1355px) {
+    .overview ul {
+        flex-direction: column;
+    }
+
+    .overview li {
+        margin-bottom: 40px;
+        flex-basis: auto;
+        padding-right: 20px;
+        border-right: 3px solid #90708C;
+    }
+
+    .overview ul .index {
+        top: 3px;
+    }
 }
 
 .overview li {
-    flex: 0 0 30%;
-    margin-left: 5%;
+    flex-grow: 0;
+    flex-shrink: 0;
     font-size: 0.9em;
     position: relative;
-    padding-top: 10px;
-    border-top: 3px solid #90708C;
     transition: border-color 0.3s ease;
 }
+
 
 .overview li:hover {
     border-color: #555B6E;
@@ -115,17 +152,12 @@ ul {
 
 .overview ul .index {
     position: absolute;
-    top: 13px;
-    left: -0.9em;
     color: #90708C;
+    left: -0.9em;
 }
 
 .overview img {
     margin-top: 15px;
-}
-
-.overview li:first-child {
-    margin-left: 0;
 }
 
 .recipient-example {
@@ -136,28 +168,39 @@ ul {
     margin-bottom: 40px;
 }
 
-.benefit-section:hover img {
-    border-color: #555B6E !important;
-}
-
-.benefit-section img {
-    width: 300px;
-}
-
-.benefit-section:nth-child(odd) img {
-    float: right;
-    margin-left: 20px;
-    padding-left: 20px;
-    border-left: 3px solid #90708C;
+.benefit-section h3 {
+    display: inline-block;
+    padding-bottom: 1em;
+    border-bottom: 3px solid #555B6E;
     transition: border-color 0.3s ease;
 }
 
-.benefit-section:nth-child(even) img {
-    float: left;
-    margin-right: 20px;
-    padding-right: 20px;
-    border-right: 3px solid #90708C;
-    transition: border-color 0.3s ease;
+.benefit-section:hover h3 {
+    border-color: #90708C;
+}
+
+.faq ul {
+    list-style: none;
+}
+
+.faq li {
+    text-indent: -1.2em;
+    margin-left: 1.2em;
+}
+
+.faq li:nth-child(even) {
+    margin-bottom: 1em;
+}
+
+.bottom-browsers {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-browsers a {
+    margin: 0 3%;
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .footer {
@@ -166,20 +209,11 @@ ul {
 }
 
 .footer a {
-    color: inherit;
     text-decoration: none;
 }
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-.footer a:focus {
-    color: inherit;
-}
-
-.footer a:visited {
-    color: inherit;
 }
 
 .fuzzle {
