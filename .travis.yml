@@ -1,0 +1,12 @@
+addons:
+  ssh_known_hosts: getfambit.com
+before_deploy:
+- openssl aes-256-cbc -K $encrypted_33c2867b4d90_key -iv $encrypted_33c2867b4d90_iv
+  -in deploy-rsa.enc -out /tmp/deploy-rsa -d
+- chmod 600 /tmp/deploy_rsa
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    branch: master
+
