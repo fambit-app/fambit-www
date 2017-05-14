@@ -1,3 +1,4 @@
+language: generic
 addons:
   ssh_known_hosts: getfambit.com
 before_deploy:
