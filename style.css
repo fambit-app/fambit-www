@@ -41,6 +41,10 @@ a, a:hover, a:active, a:visited {
     color: inherit;
 }
 
+p {
+    margin-bottom: 1em;
+}
+
 .brand-name {
     font-family: Metropolis, sans-serif;
     color: #f9f4f5;
@@ -190,7 +194,7 @@ h3 {
 .benefit-section h3 {
     display: inline-block;
     padding-bottom: 1em;
-    border-bottom: 3px solid #555B6E;
+    border-bottom: 3px solid #f9f4f5;
     transition: border-color 0.3s ease;
 }
 
