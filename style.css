@@ -43,7 +43,6 @@ a, a:hover, a:active, a:visited {
 
 .brand-name {
     font-family: Metropolis, sans-serif;
-    font-size: 4em;
     color: #f9f4f5;
     float: left;
     position: relative;
@@ -54,6 +53,7 @@ a, a:hover, a:active, a:visited {
     position: absolute;
     width: 100%;
     top: 21px;
+    overflow: hidden;
 }
 
 header img, header a, header span {
@@ -62,7 +62,7 @@ header img, header a, header span {
 
 .brand-icon{
     float: left;
-    margin: 0 25px;
+    margin: 0 15px;
 
     padding: 1px;
     background-color: #f9f4f5;
@@ -99,6 +99,10 @@ h3 {
 }
 
 @media (min-width: 1366px) {
+    header .brand-name {
+        font-size: 4em;
+    }
+
     .overview ul {
         flex-direction: row;
         justify-content: space-around;
@@ -111,12 +115,20 @@ h3 {
         transition: border-color 0.3s ease;
     }
 
-    .overview ul .index {
+    .overview .index {
         top: 13px;
     }
 }
 
-@media (max-width: 1355px) {
+@media (max-width: 1365px) {
+    header .brand-name {
+        font-size: 3em;
+    }
+
+    header a {
+        display: none;
+    }
+
     .overview ul {
         flex-direction: column;
     }
@@ -128,8 +140,14 @@ h3 {
         border-right: 3px solid #90708C;
     }
 
-    .overview ul .index {
+    .overview .index {
         top: 3px;
+    }
+}
+
+@media (max-width: 350px) {
+    header .brand-name {
+        display: none;
     }
 }
 
@@ -146,11 +164,11 @@ h3 {
     border-color: #555B6E;
 }
 
-.overview ul div {
+.overview div {
     padding: 3px;
 }
 
-.overview ul .index {
+.overview .index {
     position: absolute;
     color: #90708C;
     left: -0.9em;
@@ -158,10 +176,11 @@ h3 {
 
 .overview img {
     margin-top: 15px;
+    max-width: 100%;
 }
 
-.recipient-example {
-    display: block;
+.html-example pre {
+    overflow-x: auto;
 }
 
 .benefit-section {
