@@ -147,6 +147,10 @@ h3 {
     .overview .index {
         top: 3px;
     }
+
+    .fuzzle {
+        display: none;
+    }
 }
 
 @media (max-width: 350px) {
